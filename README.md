@@ -1,76 +1,64 @@
-# Avancerad Att-Göra Lista i Python
+# Avancerad Att-Gora Lista i Python
 
-En sofistikerad att-göra lista-applikation byggd i Python som demonstrerar avancerade programmeringskoncept och praktiska färdigheter.
+En mer avancerad att-gora-lista byggd i Python for att visa praktiska programmeringskunskaper i en enkel konsolapplikation.
 
 ## Funktioner
 
-- **Uppgiftshantering**: Lägg till, ta bort, redigera och växla status på uppgifter
-- **Prioriteter**: Tre prioritetsnivåer (Låg, Medel, Hög)
-- **Kategorier**: Organisera uppgifter i anpassade kategorier
-- **Förfallodatum**: Ställ in deadlines för uppgifter
-- **Sökning**: Sök efter uppgifter baserat på beskrivning eller kategori
-- **Filtrering**: Visa uppgifter per kategori eller endast pågående
-- **Sortering**: Sortera efter skapandedatum, prioritet eller förfallodatum
-- **Försenade uppgifter**: Identifiera uppgifter som har passerat deadline
-- **Persistent lagring**: Uppgifter sparas automatiskt till JSON-fil
+- Lagga till, ta bort, redigera och markera uppgifter som klara
+- Tre prioritetsnivaer: lag, medel och hog
+- Kategorier for att organisera uppgifter
+- Forfallodatum for planering och uppfoljning
+- Sokning pa beskrivning eller kategori
+- Filtrering av pagaende eller kategoribaserade uppgifter
+- Sortering efter skapad tid, prioritet eller forfallodatum
+- Automatisk lagring i `tasks.json`
 
-## Tekniska Färdigheter som Demonstreras
+## Teknik som visas
 
-- **Objektorienterad programmering**: Klasser för `Task` och `ToDoList`
-- **Datahantering**: JSON serialisering/deserialisering
-- **Filhantering**: Läsning och skrivning till filer
-- **Datumhantering**: Användning av `datetime` modulen
-- **Enum-typer**: För prioritetsnivåer
-- **List comprehension**: Effektiv datafiltrering
-- **Felhantering**: Try-except block för robusthet
-- **Användarinput**: Interaktiv konsollapplikation
-- **Modulär kod**: Separata funktioner för olika operationer
+- Objektorienterad programmering med `Task` och `ToDoList`
+- JSON-serialisering och filhantering
+- Datumhantering med `datetime`
+- `Enum` for prioritet
+- List comprehensions for filtrering
+- Enkel felhantering med `try` och `except`
+- Interaktiv kommandoradsinput
 
-## Installation och Körning
+## Korning
 
-1. Se till att Python 3.6+ är installerat
-2. Klona eller ladda ner projektet
-3. Kör applikationen:
-   ```bash
-   python main.py
-   ```
-   eller på Windows:
-   ```bash
-   py main.py
-   ```
+1. Installera Python 3.6 eller senare.
+2. Starta programmet:
 
-## Användning
+```bash
+python main.py
+```
 
-Applikationen startar med tre exempeluppgifter för att demonstrera funktionaliteten:
+Pa Windows fungerar ocksa:
 
-- "Lär dig Python" (Hög prioritet, Utbildning)
-- "Bygg ett webprojekt" (Medel prioritet, Projekt)  
-- "Öva GitHub" (Låg prioritet, Verktyg)
+```bash
+py main.py
+```
 
-Använd menyn för att:
-- Visa alla eller endast pågående uppgifter
-- Lägga till nya uppgifter med prioritet, kategori och förfallodatum
-- Redigera befintliga uppgifter
-- Söka efter specifika uppgifter
-- Filtrera och sortera uppgifter
+## Exempel pa innehall
+
+Programmet skapar exempeluppgifter forsta gangen det startas, bland annat:
+
+- "Lar dig Python"
+- "Bygg ett webprojekt"
+- "Ova GitHub"
 
 ## Projektstruktur
 
+```text
+main.py      # huvudprogrammet
+tasks.json   # sparade uppgifter
+tasks.txt    # enkel textfil i projektet
+README.md    # projektbeskrivning
 ```
-main.py          # Huvudapplikationen
-tasks.json       # Lagrade uppgifter (skapas automatiskt)
-README.md        # Denna fil
-```
 
-## Framtida Förbättringar
+## Mojliga forbattringar
 
-- GUI-gränssnitt med Tkinter eller webbaserat med Flask
-- Databaslagring istället för JSON
-- Användarautentisering
-- Delning av uppgifter mellan användare
-- Notifieringar för förfallodatum
-
----
-
-Byggd med ❤️ i Python för att visa programmeringskunskaper och skapa en användbar applikation.</content>
-<parameter name="filePath">c:\Users\khali\OneDrive\Skrivbord\python-project\README.md
+- Grafiskt granssnitt med Tkinter
+- Databas i stallet for JSON
+- Anvandarhantering
+- Delning av uppgifter mellan flera personer
+- Notiser for uppgifter med deadline
